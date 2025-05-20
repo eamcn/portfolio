@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eamcn | Portfolio</title>
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero animate__animated animate__fadeInDown">
+    <div class="hero-content">
+      <div class="profile-image">
+        <img src="assets/avatar2.png" alt="Eamon" />
+      </div>
+      <div class="logo-tagline">
+        <h1 class="logo animate__animated animate__fadeInLeft animate__delay-1s">eamcn</h1>
+        <p class="tagline animate__animated animate__fadeInLeft animate__delay-1s">Aspiring Software Engineer</p>
+        <div class="socials animate__animated animate__fadeInLeft animate__delay-1s">
+          <a href="https://github.com/eamcn" target="_blank" aria-label="GitHub">
+            <img src="assets/github-mark.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/eamon-murphy-b647b72a4/" target="_blank" aria-label="LinkedIn">
+            <img src="assets/linkedin.svg" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about animate__animated animate__fadeInUp animate__delay-2s">
+      <h2>About</h2>
+      <p>
+        I’m a second-year computer science student passionate about software development. 
+        I enjoy solving problems and building applications that make a difference.
+      </p>
+    </section>
+
+    <section class="projects animate__animated animate__fadeInUp animate__delay-2s">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card animate__animated animate__zoomIn animate__delay-2s">
+      <div class="thumbnail orange">
+        <img src="assets/projects/ufp/ufp_logo.png" alt="Urban Fitness + logo" style="width:100%; height:100%; object-fit: contain; border-radius: 6px;" />
+      </div>
+      <h3>Urban Fitness +</h3>
+      <p>Full-stack fitness web app built for a university group project, featuring secure authentication, Fitbit sync, workout & diet tracking, a discussion forum, real-time gym locator, and analytics — hosted on AWS with Flask backend.</p>
+    </div>
+    <div class="project-card animate__animated animate__zoomIn animate__delay-2s">
+      <div class="thumbnail dark">
+        <img src="assets/projects/celer/celer_logo.png" alt="celer.ai logo" style="width:100%; height:100%; object-fit: contain; border-radius: 6px;" />
+      </div>
+      <h3>celer.ai</h3>
+      <p>celer.ai is a clean, responsive landing page and brand concept for a startup offering reliable, curated GPU compute to AI startups in emerging markets. Built with Next.js, Tailwind CSS, and TypeScript, it showcases modern design and frontend implementation.</p>
+    </div>
+  </div>
+  <div class="btn-container animate__animated animate__fadeInUp animate__delay-2s">
+    <a href="projects.html" class="btn">View All Projects</a>
+  </div>
+</section>
+<section class="contact-form animate__animated animate__fadeInUp animate__delay-2s">
+  <h2>Contact Me</h2>
+  <form id="contact-form" action="https://formspree.io/f/mdkgjbbv" method="POST" class="contact-form__form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="_replyto" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <div id="form-status" class="form-status" style="display:none;"></div>
+</section>
+  </main>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects</title>
+
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link rel="stylesheet" href="styles/projects.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="projects-header animate__animated animate__fadeInDown">
+    <a href="home.html" class="back-button">← Back</a>
+    <h1>Projects</h1>
+  </header>
+
+  <main>
+    <section class="projects-list">
+      <article class="project-tile animate__animated animate__fadeInUp" tabindex="0" role="button" aria-pressed="false" data-project="1">
+        <img class="project-image" src="assets/projects/ufp/ufp_logo.png" alt="Screenshot of Urban Fitness +" />
+        <div class="project-info">
+          <h2>Urban Fitness +</h2>
+          <p>Full-stack fitness web app built for a university group project, featuring secure authentication, Fitbit sync, workout & diet tracking, a discussion forum, real-time gym locator, and analytics — hosted on AWS with Flask backend.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Leaflet.js</span>
+            <span>OpenStreetMap API</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-tile animate__animated animate__fadeInUp" tabindex="0" role="button" aria-pressed="false" data-project="2">
+        <img class="project-image" src="assets/projects/celer/celer_logo.png" alt="Screenshot of Project Two" />
+        <div class="project-info">
+          <h2>celer.ai</h2>
+          <p>celer.ai is a clean, responsive landing page and brand concept for a startup offering reliable, curated GPU compute to AI startups in emerging markets. Built with Next.js, Tailwind CSS, and TypeScript, it showcases modern design and frontend implementation.</p>
+          <div class="project-tags">
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+            <span>React</span>
+          </div>
+        </div>
+      </article>
+
+
+  <!-- Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-desc">
+    <div class="modal-content animate__animated" role="document" tabindex="0">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+
+      <h2 id="modal-title">Modal Title</h2>
+
+      <div class="modal-screenshots-wrapper"></div>
+
+      <p id="modal-desc">Modal description goes here.</p>
+      <div id="modal-tags"></div>
+      <div id="modal-links"></div>
+    </div>
+  </div>
+
+  <script src="scripts/projects.js"></script>
+</body>
+</html>
