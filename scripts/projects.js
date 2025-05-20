@@ -19,26 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
         'assets/projects/ufp/ufp_screenshot_4.png'
       ],
       tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'Leaflet.js', 'OpenStreetMap API'],
-      links: [
-        { href: 'https://github.com/YOURUSERNAME/fitness-app', label: 'GitHub Repo' }
-      ]
+      links: []
     },
     2: {
       title: 'celer.ai',
       description: 'celer.ai is a full-stack brand and interface design for an early-stage AI infrastructure startup. The project began from scratch — no logo, no content, no visual direction — and evolved into a fully realized identity and responsive landing page. The goal was to create a minimalist, developer-friendly brand that feels credible, green, and forward-looking. I designed the visual identity (logo, color system, typography), built the front-end architecture using Next.js, Tailwind CSS, and TypeScript, and designed the full UI/UX for a future dashboard app. The landing page includes a waitlist form, responsive layout, and SEO-friendly structure. I also explored dashboard wireframes and interface flows for future implementation, focusing on usability, clean UI, and efficient user journeys. The project is built to scale into a real SaaS product and serve as a visual proof-of-concept for investors, developers, and early adopters.',
       screenshots: ['assets/projects/celer/celer_screenshot_1.png', 'assets/projects/celer/celer_logo_2.png'],
       tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React'],
-      links: [
-        { href: 'https://github.com/YOURUSERNAME/project-two', label: 'GitHub' }
-      ]
-    },
-    3: {
-      title: 'Project Three',
-      description: 'Detailed description about Project Three goes here.',
-      screenshots: ['assets/project3_screenshot.png'],
-      tags: ['Vue.js', 'Django', 'PostgreSQL'],
       links: []
-    }
+    },
   };
 
   function openModal(projectId) {
